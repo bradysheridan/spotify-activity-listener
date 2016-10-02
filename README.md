@@ -10,8 +10,7 @@
 3. Make note of your API key
 ![The image failed to load, please refresh your browser!](images/api-key.png)
 4. In Spotify, go to `Settings > Last.fm` and select `Connect to Last.fm`
-![The image failed to load, please refresh your browser!](images/spotify-settings-one.png)
-![The image failed to load, please refresh your browser!](images/spotify-settings-two.png)
+![The image failed to load, please refresh your browser!](images/spotify-settings.jpg)
 
 ## **Installation**
 1. `npm i spotify-activity-listener --save`
