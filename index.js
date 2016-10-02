@@ -5,19 +5,23 @@ class SpotifyListener {
     this.endpoint = "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + this.username + "&api_key=" + this.key + "&format=json";
     this.client = new XMLHttpRequest();
     this.client.onload = this.handler;
+    this.client.trackCount = this.trackCount;
     this.client.callback = this.callback;
   }
 
   handler() {
     if (this.status === 200 && this.responseText != null) {
-      var tracks = JSON.parse(this.responseText).recenttracks.track;
-      var latestTrack = {
-        name: tracks[0].name,
-        artist: tracks[0].artist["#text"],
-        album: tracks[0].album["#text"],
-        art: tracks[0].image[3]["#text"],
-      };
-      this.callback(latestTrack);
+      var tracks = JSON.parse(this.responseText).recenttracks.track,
+          parsedTracks = [];
+      for (var i = 0; i < this.trackCount; i++) {
+        parsedTracks.push({
+          name: tracks[i].name,
+          artist: tracks[i].artist["#text"],
+          album: tracks[i].album["#text"],
+          art: tracks[i].image[3]["#text"],
+        });
+      }
+      this.callback(parsedTracks);
     }
   }
 
@@ -36,4 +40,4 @@ class SpotifyListener {
   }
 }
 
-module.exports = Listener;
+module.exports = SpotifyListener;
