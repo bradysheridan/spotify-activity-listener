@@ -1,20 +1,22 @@
 // Dependencies
 import React from 'react';
-import Listener from 'spotify-activity-listener';
+import SpotifyListener from 'spotify-activity-listener';
+import MusicIcon from 'react-icons/lib/md/library-music';
 
-// Stylesheets
+// Styles
 import styles from './styles';
 
-class ListeningTo extends React.Component {
+class Example extends React.Component {
   constructor(props) {
     super(props);
 
-    this.Listener = new Listener({
-      username: 'YOUR_LAST.FM_USERNAME',
-      key: 'YOUR_LAST.FM_API_KEY',
-      pollInterval: 5000,
+    this.Listener = new SpotifyListener({
+      username: '...',
+      key: '...',
+      trackCount: 1,
+      pollInterval: 3000,
       callback: (res) => this.setState({
-        track: res,
+        track: res[0],
       }),
     });
 
@@ -46,4 +48,4 @@ class ListeningTo extends React.Component {
   }
 };
 
-module.exports = ListeningTo;
+module.exports = Example;

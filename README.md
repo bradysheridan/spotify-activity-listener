@@ -1,10 +1,10 @@
-## **Spotify Activity Listener**
+# **Spotify Activity Listener**
 ### Poll Last.fm for your recent Spotify listening data.
 
 ## **Demo**
 ![The gif failed to load, please refresh your browser!](https://github.com/bradysheridan/spotify-activity-listener/blob/master/images/demo.gif)
 
-## **Setup**
+## **Prerequisite Configuration**
 1. [Create a Last.fm account](https://www.last.fm/join)
 2. [Enable API access for your account](http://www.last.fm/api/account/create)
 3. Make note of your API key
@@ -16,6 +16,7 @@
 1. `npm i spotify-activity-listener --save`
 
 ## **Usage**
+### [**Full Usage Example (React.js)**](https://github.com/bradysheridan/spotify-activity-listener/blob/master/example/Example.js)
 - Import the listener:
 ```javascript
 import SpotifyListener from 'spotify-activity-listener';
@@ -56,8 +57,6 @@ Listener.stopListening();
   { /* (...) */ }
 ]
 ```
-
-## [**Full Usage Example (React.js)**](https://github.com/bradysheridan/spotify-activity-listener/blob/master/example/Example.js)
 
 ## **Contribute**
 1. Fork it
