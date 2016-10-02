@@ -12,7 +12,7 @@ class ListeningTo extends React.Component {
     this.Listener = new Listener({
       username: 'YOUR_LAST.FM_USERNAME',
       key: 'YOUR_LAST.FM_API_KEY',
-      pollInterval: 2000,
+      pollInterval: 5000,
       callback: (res) => this.setState({
         track: res,
       }),
