@@ -1,0 +1,26 @@
+{
+  "name": "spotify-activity-listener",
+  "version": "1.0.1",
+  "description": "Poll Last.fm for your most recent Spotify listens.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradysheridan/spotify-activity-listener.git"
+  },
+  "keywords": [
+    "scrobble",
+    "lastfm",
+    "spotify",
+    "music",
+    "listener"
+  ],
+  "author": "Brady Sheridan (https://brady.codes)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradysheridan/spotify-activity-listener/issues"
+  },
+  "homepage": "https://github.com/bradysheridan/spotify-activity-listener#readme"
+}
