@@ -1,4 +1,4 @@
-import XMLHttpRequest from 'xhr2';
+var XMLHttpRequest = require('xhr2');
 
 class SpotifyListener {
   constructor(props) {
