@@ -1,6 +1,6 @@
 {
   "name": "spotify-activity-listener",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Poll Last.fm for your most recent Spotify listens.",
   "main": "index.js",
   "scripts": {
@@ -15,12 +15,22 @@
     "lastfm",
     "spotify",
     "music",
-    "listener"
+    "feed",
+    "activity",
+    "listener",
+    "display",
+    "node",
+    "package",
+    "real",
+    "time"
   ],
   "author": "Brady Sheridan (https://brady.codes)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bradysheridan/spotify-activity-listener/issues"
   },
-  "homepage": "https://github.com/bradysheridan/spotify-activity-listener#readme"
+  "homepage": "https://github.com/bradysheridan/spotify-activity-listener#readme",
+  "dependencies": {
+    "xhr2": "^0.1.4"
+  }
 }

@@ -1,3 +1,5 @@
+import XMLHttpRequest from 'xhr2';
+
 class SpotifyListener {
   constructor(props) {
     if (props) for (var i in props) this[i] = props[i];
